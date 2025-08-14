@@ -1,0 +1,83 @@
+.alerta {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  color: $blanco;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  &.error {
+    background-color: $rojo;
+    border-left: 6px solid darken($rojo, 10%);
+    animation: shake 0.4s ease-in-out;
+  }
+
+  &.success {
+    background-color: $verde;
+    border-left: 6px solid darken($verde, 10%);
+  }
+
+  &.success-actualizado {
+    background-color: $amarillo;
+    border-left: 6px solid darken($amarillo, 10%);
+  }
+
+  &.success-delecte {
+    background-color: $rojo;
+    border-left: 6px solid darken($rojo, 10%);
+  }
+
+  &.warning {
+    background-color: $amarillo;
+    border-left: 6px solid darken($amarillo, 10%);
+    color: $negro;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+table.propiedades {
+  margin-top: 4rem;
+  width: 100%;
+  border-spacing: 0;
+
+  thead {
+    background-color: $verde;
+
+    th {
+      color: $blanco;
+      padding: 2rem;
+      text-align: left; // Puedes ajustar según tu diseño
+    }
+  }
+
+  td {
+    padding: 1.5rem;
+    vertical-align: middle;
+  }
+
+  .imagen-tabla {
+    width: 10rem;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.imagen-small{
+  width: 20rem;
+}

@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# Archivos generados por Gulp
+build/
+dist/
+imagenes/
+*.map
+
+# Caché y temporales
+.sass-cache/
+*.log
+*.tmp
+*.bak
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración de editores
+.vscode/
+.idea/
+*.swp
